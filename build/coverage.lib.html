@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-good/good/lib/utils.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-good/node_modules/good/lib/utils.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-good">npmtest-good (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-good/good/lib/utils.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-good/node_modules/good/lib/utils.js</span></h1>
     <h2>
         
         Statements: <span class="metric">6.67% <small>(5 / 75)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-good/good/lib/</a> » utils.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-good/node_modules/good/lib/</a> &#187; utils.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -633,118 +635,118 @@ const Hoek = require('hoek');
 &nbsp;
 const internals = {};
 &nbsp;
-internals.extractConfig = <span class="fstat-no" title="function not covered">function (request) {</span>
+internals.extractConfig = <span class="fstat-no" title="function not covered" >function (request) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    return Object.assign({}, Hoek.reach(request, 'route.settings.plugins.good'), Hoek.reach(request, 'plugins.good'));</span>
+<span class="cstat-no" title="statement not covered" >    return Object.assign({}, Hoek.reach(request, 'route.settings.plugins.good'), Hoek.reach(request, 'plugins.good'));</span>
 };
 &nbsp;
 // Payload for "log" events
 class ServerLog {
-    constructor<span class="fstat-no" title="function not covered">(event) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(event) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.event = 'log';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = event.timestamp;</span>
-<span class="cstat-no" title="statement not covered">        this.tags = event.tags;</span>
-<span class="cstat-no" title="statement not covered">        this.data = event.data;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'log';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = event.timestamp;</span>
+<span class="cstat-no" title="statement not covered" >        this.tags = event.tags;</span>
+<span class="cstat-no" title="statement not covered" >        this.data = event.data;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
     }
 }
 &nbsp;
 &nbsp;
 // Payload for "error" events
 class RequestError {
-    constructor<span class="fstat-no" title="function not covered">(request, error) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(request, error) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.event = 'error';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = request.info.received;</span>
-<span class="cstat-no" title="statement not covered">        this.id = request.id;</span>
-<span class="cstat-no" title="statement not covered">        this.url = request.url;</span>
-<span class="cstat-no" title="statement not covered">        this.method = request.method;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
-<span class="cstat-no" title="statement not covered">        this.error = error;</span>
-<span class="cstat-no" title="statement not covered">        this.config = internals.extractConfig(request);</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'error';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = request.info.received;</span>
+<span class="cstat-no" title="statement not covered" >        this.id = request.id;</span>
+<span class="cstat-no" title="statement not covered" >        this.url = request.url;</span>
+<span class="cstat-no" title="statement not covered" >        this.method = request.method;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        this.error = error;</span>
+<span class="cstat-no" title="statement not covered" >        this.config = internals.extractConfig(request);</span>
     }
-    toJSON<span class="fstat-no" title="function not covered">() {</span>
+    toJSON<span class="fstat-no" title="function not covered" >() {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        const result = Object.assign({}, this, {</span>
+<span class="cstat-no" title="statement not covered" >        const result = Object.assign({}, this, {</span>
             error: {
                 error: this.error.message,
                 stack: this.error.stack
             }
         });
-<span class="cstat-no" title="statement not covered">        return result;</span>
+<span class="cstat-no" title="statement not covered" >        return result;</span>
     }
 }
 &nbsp;
 &nbsp;
 // Payload for "response" events
 class RequestSent {
-    constructor<span class="fstat-no" title="function not covered">(reqOptions, resOptions, request) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(reqOptions, resOptions, request) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        const req = request.raw.req;</span>
-<span class="cstat-no" title="statement not covered">        const res = request.raw.res;</span>
+<span class="cstat-no" title="statement not covered" >        const req = request.raw.req;</span>
+<span class="cstat-no" title="statement not covered" >        const res = request.raw.res;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.event = 'response';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = request.info.received;</span>
-<span class="cstat-no" title="statement not covered">        this.id = request.id;</span>
-<span class="cstat-no" title="statement not covered">        this.instance = request.connection.info.uri;</span>
-<span class="cstat-no" title="statement not covered">        this.labels = request.connection.settings.labels;</span>
-<span class="cstat-no" title="statement not covered">        this.method = request.method;</span>
-<span class="cstat-no" title="statement not covered">        this.path = request.path;</span>
-<span class="cstat-no" title="statement not covered">        this.query = request.query;</span>
-<span class="cstat-no" title="statement not covered">        this.responseTime = Date.now() - request.info.received;</span>
-<span class="cstat-no" title="statement not covered">        this.responseSentTime = request.info.responded - request.info.received;</span>
-<span class="cstat-no" title="statement not covered">        this.statusCode = res.statusCode;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
-<span class="cstat-no" title="statement not covered">        this.httpVersion = request.raw.req.httpVersion;</span>
-<span class="cstat-no" title="statement not covered">        this.source = {</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'response';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = request.info.received;</span>
+<span class="cstat-no" title="statement not covered" >        this.id = request.id;</span>
+<span class="cstat-no" title="statement not covered" >        this.instance = request.connection.info.uri;</span>
+<span class="cstat-no" title="statement not covered" >        this.labels = request.connection.settings.labels;</span>
+<span class="cstat-no" title="statement not covered" >        this.method = request.method;</span>
+<span class="cstat-no" title="statement not covered" >        this.path = request.path;</span>
+<span class="cstat-no" title="statement not covered" >        this.query = request.query;</span>
+<span class="cstat-no" title="statement not covered" >        this.responseTime = Date.now() - request.info.received;</span>
+<span class="cstat-no" title="statement not covered" >        this.responseSentTime = request.info.responded - request.info.received;</span>
+<span class="cstat-no" title="statement not covered" >        this.statusCode = res.statusCode;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        this.httpVersion = request.raw.req.httpVersion;</span>
+<span class="cstat-no" title="statement not covered" >        this.source = {</span>
             remoteAddress: request.info.remoteAddress,
             userAgent: req.headers['user-agent'],
             referer: req.headers.referer
         };
-<span class="cstat-no" title="statement not covered">        this.route = request.route.path;</span>
+<span class="cstat-no" title="statement not covered" >        this.route = request.route.path;</span>
 &nbsp;
         /* $lab:coverage:off$ */
-<span class="cstat-no" title="statement not covered">        this.log = (request.route.settings.log === false ? [] : request.getLog()); </span>         // Explicitly compare to false for hapi &lt; v15
+<span class="cstat-no" title="statement not covered" >        this.log = (request.route.settings.log === false ? [] : request.getLog()); </span>         // Explicitly compare to false for hapi &lt; v15
         /* $lab:coverage:on$ */
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.tags = request.route.settings.tags;</span>
+<span class="cstat-no" title="statement not covered" >        this.tags = request.route.settings.tags;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (reqOptions.headers) {</span>
-<span class="cstat-no" title="statement not covered">            this.headers = req.headers;</span>
+<span class="cstat-no" title="statement not covered" >        if (reqOptions.headers) {</span>
+<span class="cstat-no" title="statement not covered" >            this.headers = req.headers;</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (reqOptions.payload) {</span>
-<span class="cstat-no" title="statement not covered">            this.requestPayload = request.payload;</span>
+<span class="cstat-no" title="statement not covered" >        if (reqOptions.payload) {</span>
+<span class="cstat-no" title="statement not covered" >            this.requestPayload = request.payload;</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (resOptions.payload &amp;&amp; request.response) {</span>
-<span class="cstat-no" title="statement not covered">            this.responsePayload = request.response.source;</span>
+<span class="cstat-no" title="statement not covered" >        if (resOptions.payload &amp;&amp; request.response) {</span>
+<span class="cstat-no" title="statement not covered" >            this.responsePayload = request.response.source;</span>
         }
-<span class="cstat-no" title="statement not covered">        this.config = internals.extractConfig(request);</span>
+<span class="cstat-no" title="statement not covered" >        this.config = internals.extractConfig(request);</span>
     }
 }
 &nbsp;
 &nbsp;
 // Payload for "ops" events
 class Ops {
-    constructor<span class="fstat-no" title="function not covered">(ops) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(ops) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.event = 'ops';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = Date.now();</span>
-<span class="cstat-no" title="statement not covered">        this.host = ops.host;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
-<span class="cstat-no" title="statement not covered">        this.os = {</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'ops';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = Date.now();</span>
+<span class="cstat-no" title="statement not covered" >        this.host = ops.host;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        this.os = {</span>
             load: ops.osload,
             mem: ops.osmem,
             uptime: ops.osup
         };
-<span class="cstat-no" title="statement not covered">        this.proc = {</span>
+<span class="cstat-no" title="statement not covered" >        this.proc = {</span>
             uptime: ops.psup,
             mem: ops.psmem,
             delay: ops.psdelay
         };
-<span class="cstat-no" title="statement not covered">        this.load = {</span>
+<span class="cstat-no" title="statement not covered" >        this.load = {</span>
             requests: ops.requests,
             concurrents: ops.concurrents,
             responseTimes: ops.responseTimes,
@@ -756,38 +758,38 @@ class Ops {
 &nbsp;
 // Payload for "request" events via request.log
 class RequestLog {
-    constructor<span class="fstat-no" title="function not covered">(request, event) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(request, event) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.event = 'request';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = event.timestamp;</span>
-<span class="cstat-no" title="statement not covered">        this.tags = event.tags;</span>
-<span class="cstat-no" title="statement not covered">        this.data = event.data;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
-<span class="cstat-no" title="statement not covered">        this.id = request.id;</span>
-<span class="cstat-no" title="statement not covered">        this.method = request.method;</span>
-<span class="cstat-no" title="statement not covered">        this.path = request.path;</span>
-<span class="cstat-no" title="statement not covered">        this.config = internals.extractConfig(request);</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'request';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = event.timestamp;</span>
+<span class="cstat-no" title="statement not covered" >        this.tags = event.tags;</span>
+<span class="cstat-no" title="statement not covered" >        this.data = event.data;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        this.id = request.id;</span>
+<span class="cstat-no" title="statement not covered" >        this.method = request.method;</span>
+<span class="cstat-no" title="statement not covered" >        this.path = request.path;</span>
+<span class="cstat-no" title="statement not covered" >        this.config = internals.extractConfig(request);</span>
     }
 }
 &nbsp;
 class WreckResponse {
-    constructor<span class="fstat-no" title="function not covered">(error, request, response, start, uri) {</span>
+    constructor<span class="fstat-no" title="function not covered" >(error, request, response, start, uri) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        response = response || {};</span>
-<span class="cstat-no" title="statement not covered">        uri = uri || {};</span>
-<span class="cstat-no" title="statement not covered">        this.event = 'wreck';</span>
-<span class="cstat-no" title="statement not covered">        this.timestamp = Date.now();</span>
-<span class="cstat-no" title="statement not covered">        this.timeSpent = this.timestamp - start;</span>
-<span class="cstat-no" title="statement not covered">        this.pid = process.pid;</span>
+<span class="cstat-no" title="statement not covered" >        response = response || {};</span>
+<span class="cstat-no" title="statement not covered" >        uri = uri || {};</span>
+<span class="cstat-no" title="statement not covered" >        this.event = 'wreck';</span>
+<span class="cstat-no" title="statement not covered" >        this.timestamp = Date.now();</span>
+<span class="cstat-no" title="statement not covered" >        this.timeSpent = this.timestamp - start;</span>
+<span class="cstat-no" title="statement not covered" >        this.pid = process.pid;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (error) {</span>
-<span class="cstat-no" title="statement not covered">            this.error = {</span>
+<span class="cstat-no" title="statement not covered" >        if (error) {</span>
+<span class="cstat-no" title="statement not covered" >            this.error = {</span>
                 message: error.message,
                 stack: error.stack
             };
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.request = {</span>
+<span class="cstat-no" title="statement not covered" >        this.request = {</span>
             method: uri.method,
             path: uri.path,
             url: uri.href,
@@ -796,7 +798,7 @@ class WreckResponse {
             headers: request._headers
         };
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.response = {</span>
+<span class="cstat-no" title="statement not covered" >        this.response = {</span>
             statusCode: response.statusCode,
             statusMessage: response.statusMessage,
             headers: response.headers
@@ -806,13 +808,13 @@ class WreckResponse {
 &nbsp;
 &nbsp;
 class NoOp extends Stream.Transform {
-    constructor<span class="fstat-no" title="function not covered">() {</span>
+    constructor<span class="fstat-no" title="function not covered" >() {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        super({ objectMode: true });</span>
+<span class="cstat-no" title="statement not covered" >        super({ objectMode: true });</span>
     }
-    _transform<span class="fstat-no" title="function not covered">(value, encoding, callback) {</span>
+    _transform<span class="fstat-no" title="function not covered" >(value, encoding, callback) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        callback(null, value);</span>
+<span class="cstat-no" title="statement not covered" >        callback(null, value);</span>
     }
 }
 &nbsp;
@@ -828,11 +830,10 @@ module.exports = {
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 23:04:46 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 06:17:40 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
