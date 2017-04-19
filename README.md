@@ -1,7 +1,10 @@
-# test coverage for  [good (v7.1.0)](https://github.com/hapijs/good#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-good.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-good) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-good.svg)](https://travis-ci.org/npmtest/node-npmtest-good)
+# npmtest-good
+
+#### test coverage for  [good (v7.1.0)](https://github.com/hapijs/good#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-good.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-good) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-good.svg)](https://travis-ci.org/npmtest/node-npmtest-good)
+
 #### Server and process monitoring plugin
 
-[![NPM](https://nodei.co/npm/good.png?downloads=true)](https://www.npmjs.com/package/good)
+[![NPM](https://nodei.co/npm/good.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/good)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-good/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-good/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-good/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-good/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-good/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-good/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-good/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-good%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-good/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-good/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-good/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-good%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-good/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-good/build/test-report.html](https://npmtest.github.io/node-npmtest-good/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-good/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-good/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-good/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-good/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-good/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-good/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-good/build/screenCapture.npmPackageListing.svg)
 
@@ -65,20 +74,16 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "hueniverse",
-            "email": "eran@hammer.io"
+            "name": "hueniverse"
         },
         {
-            "name": "wyatt",
-            "email": "wpreul@gmail.com"
+            "name": "wyatt"
         },
         {
-            "name": "arb",
-            "email": "arbretz@gmail.com"
+            "name": "arb"
         },
         {
-            "name": "lloydbenson",
-            "email": "lloyd.benson@gmail.com"
+            "name": "lloydbenson"
         }
     ],
     "name": "good",
@@ -86,7 +91,6 @@
     "peerDependencies": {
         "hapi": ">=10.x.x"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/hapijs/good.git"
