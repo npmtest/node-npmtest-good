@@ -1,4 +1,4 @@
-npmtest-good@0.0.1 /home/travis/build/npmtest/node-npmtest-good
+npmtest-good@0.0.2 /home/travis/build/npmtest/node-npmtest-good
 └─┬ hapi@16.1.1 
   ├── accept@2.1.3 
   ├── ammo@2.0.3 

@@ -1,6 +1,6 @@
 # npmtest-good
 
-#### test coverage for  [good (v7.1.0)](https://github.com/hapijs/good#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-good.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-good) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-good.svg)](https://travis-ci.org/npmtest/node-npmtest-good)
+#### basic test coverage for  [good (v7.1.0)](https://github.com/hapijs/good#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-good.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-good) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-good.svg)](https://travis-ci.org/npmtest/node-npmtest-good)
 
 #### Server and process monitoring plugin
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-good/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-good/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-good/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-good/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-good/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-good/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-good/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-good/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-good/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-good/build/coverage.html/index.html)
 
@@ -98,7 +98,8 @@
     "scripts": {
         "test": "lab -m 5000 -t 100 -v -La code"
     },
-    "version": "7.1.0"
+    "version": "7.1.0",
+    "bin": {}
 }
 ```
 
